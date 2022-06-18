@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <title>Document</title>
 </head>
@@ -35,7 +36,9 @@
      
      <main>
          <section class="intro">
-            <h1>CLÍNICA  BELGRANO</h1>
+            <h1 data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">CLÍNICA  BELGRANO</h1>
             <div>
                 <p class="parrafos">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem, illum enim quam
@@ -63,7 +66,7 @@
                   </p>
 
                   <figure>
-                        <img class="bordeImagenes" src="./img/pediatra.jpg" alt="pediatra">
+                        <img data-aos="zoom-in-down" class="bordeImagenes" src="./img/pediatra.jpg" alt="pediatra">
                         <figcaption>Consultorio ambientado para los más pequeños.</figcaption>
                   </figure>
             </div>      
@@ -78,7 +81,7 @@
                   </p>
 
                   <figure>
-                        <img class="bordeImagenes" src="./img/dermatologia.jpg" alt="dermatologia">
+                        <img data-aos="zoom-in-down" class="bordeImagenes" src="./img/dermatologia.jpg" alt="dermatologia">
                         <figcaption>Especialista atendiendo a una paciente.</figcaption>
                   </figure>
             </div>      
@@ -93,7 +96,7 @@
                   </p>
 
                   <figure>
-                        <img class="bordeImagenes" src="./img/cardiologia.jpg" alt="cardiologia">
+                        <img data-aos="zoom-in-down" class="bordeImagenes" src="./img/cardiologia.jpg" alt="cardiologia">
                         <figcaption>Doctor midiendo la presión al paciente.</figcaption>
                   </figure>
             </div>      
@@ -109,7 +112,7 @@
                   </p>
 
                   <figure>
-                        <img class="bordeImagenes" src="./img/cirugia.jpg" alt="cirugia">
+                        <img data-aos="zoom-in-down" class="bordeImagenes" src="./img/cirugia.jpg" alt="cirugia">
                         <figcaption>Quirófano de la clínica.</figcaption>
                   </figure>
             </div>      
@@ -124,7 +127,7 @@
                   </p>
 
                   <figure>
-                        <img class="bordeImagenes" src="./img/medico.jpg" alt="medico">
+                        <img data-aos="zoom-in-down" class="bordeImagenes" src="./img/medico.jpg" alt="medico">
                         <figcaption>Consultorio de uno de los médicos general.</figcaption>
                   </figure>
             </div>      
@@ -145,15 +148,20 @@
            <h3 class="colorFooter">Zabala 1437 piso 21, Belgrano, Ciudad Autonoma de Buenos Aires</h3>
            <div>
                <a href="https://www.instagram.com/">
-                  <img src="https://img.icons8.com/fluency/30/000000/instagram-new.png"/>
+                  <img class="redes" src="https://img.icons8.com/fluency/30/000000/instagram-new.png"/>
                </a>
                
                <a href="https://www.whatsapp.com/">
-                  <img src="https://img.icons8.com/office/30/000000/whatsapp--v1.png"/>
+                  <img class="redes" src="https://img.icons8.com/office/30/000000/whatsapp--v1.png"/>
                </a>
            </div>
      </footer>      
 
+
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                  AOS.init();
+            </script>
 
 </body>
 </html>
