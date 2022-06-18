@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Plus+Jakarta+Sans:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-image: url(../img/fondo.jpg);
+    display: flex;
+    flex-direction: column;
+}
+
+
+header{
+    background-color: rgb(11, 42, 88);
+    text-align: center;
+    padding: 56px 23px 46px 38px;
+    margin-top: 0%;
+    margin-bottom: 50px;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: lightblue;
+    font-size: large;
+}
+
+
+h1{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color:black;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+
+section h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-style:normal;
+    text-transform:uppercase;
+    padding-left:0px;
+    margin: 40px; 
+    margin-bottom: 20px;
+}
+
+
+section h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-style:normal;
+    text-transform:uppercase;
+    padding-left: 0px;
+    margin:40px;
+    margin-bottom: 20px;
+}
+
+
+p{
+    font-family: 'Lato', sans-serif;
+    padding-left: 0px;
+    margin-bottom: 20px;
+}
+
+
+footer{
+    grid-area: footer;
+    background-color: rgb(11, 42, 88);
+    text-align: center;
+    padding: 100px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+
+header{
+    grid-area: header;
+}    
+
+.intro{
+    grid-area: intro;
+}
+
+.especialidad{
+    grid-area: especialidad;
+}
+
+.video{
+    grid-area: video;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+.encabezado{
+    display: grid;
+    grid-template-areas: 
+    "header       header       header"
+    "intro        intro        intro"
+    "especialidad especialidad especialidad"
+    "video        video        video"
+    "footer       footer       footer";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.galeriaEspecialidad{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 3em;
+    justify-items: center;
+}
+
+
+.bordeImagenes{
+    border: 10px ridge burlywood;
+    width: 350px;
+    height: 250px;
+    margin-bottom: 3px;
+    margin-top: 20px;
+}
+
+
+
+@media(min-width:360px){
+    .encabezado{
+        grid-template-areas: 
+        "header"
+        "intro"
+        "especialidad"
+        "video"
+        "footer";
+        grid-template-columns: 1fr;
+    }     
+
+    .galeriaEspecialidad{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        flex-wrap: wrap;
+    }
+
+    header{
+        background-color: rgb(4, 4, 59);
+    }
+
+    nav ul{
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+
+    li{
+        list-style-type: none;
+    }
+    
+    a{
+        text-decoration: none;
+        color: lightblue;
+        font-size:small;
+    }
+    
+    li a:hover{
+        color:rgb(223, 188, 146);
+        background-color: rgb(99, 97, 216);
+    }
+
+    iframe{
+        display: grid;
+        width: 350px;
+        height: 250px;
+    } 
+
+    .navegar:hover{
+        color: blanchedalmond;
+        background-color: gray;  
+    }
+
+    .redes{
+        transition-property: all;
+        transition-duration: 2s;
+    }
+
+    .redes:hover{
+        transform: scale(2);
+    }
+
+    footer{
+        background-color: rgb(4, 4, 59);
+    }
+
+}
+
+@media(min-width:768px){
+    .encabezado{
+        grid-template-areas: 
+        "header       header"
+        "intro        intro"
+        "especialidad especialidad"
+        "video        video"
+        "footer       footer";
+        grid-template-columns: 1fr 1fr;
+    }     
+
+    .galeriaEspecialidad{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header{
+        background-color: rgb(59, 59, 88);
+    }
+    
+    a {
+        font-size: large;
+    }
+
+    li a:hover{
+        color:rgb(223, 188, 146);
+        background-color: rgb(99, 97, 216);
+    }
+
+    iframe{
+        width:560px;
+        height:315px;
+    }
+
+    footer{
+        background-color: rgb(59, 59, 88);
+    }
+}
+
+
+@media(min-width:1024px){
+    .encabezado{
+        grid-template-areas: 
+        "header       header       header"
+        "intro        intro        intro"
+        "especialidad especialidad especialidad"
+        "video        video        video"
+        "footer       footer       footer";
+        grid-template-columns: 1fr 1fr 1fr;
+    }     
+
+    .galeriaEspecialidad{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header{
+        background-color: rgb(11, 42, 88);
+    }
+
+    a{
+        font-size: large;
+    }
+    
+    iframe{
+        width:560px;
+        height:315px;
+    }
+    
+    footer{
+        background-color: rgb(11, 42, 88);
+    }
+}
+
+
+
+
+.parrafos{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.navegar{
+    color:gray;
+}
+
+.imgEspecialistas{
+    border: 10px ridge burlywood;
+    width: 400px;
+    height: 550px;
+    margin-top: 10px;
+}
+
+.bordeImagen{
+    border: 2px solid black;
+    width: 450px;
+    height: 350px;
+}
+
+.centrarImgEspNos{
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.centrarImgTurnos{
+    margin-top: 50px;
+    padding-left: 40px;
+}
+
+.alerta{
+    letter-spacing: 2px;
+    color: brown;
+}
+
+.formulario{
+    margin-bottom: 10px;
+}
+
+.espacio{
+    color: rgb(0, 75, 110);
+    display: grid;
+    justify-content: center;
+}
+
+.video{
+    margin-top: 120px;
+}
+
+.centrarVideo{
+    padding-left: 40px;
+}
+
+.colorFooter{
+    color: rgb(188, 233, 245);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
