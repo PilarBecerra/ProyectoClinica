@@ -1,0 +1,39 @@
+$redes:(
+    instagram: #da4e88d0,
+    whatsapp: #1bbd1b,
+    facebook: #4a4df0,
+    twitter: #55aCee,
+);
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
+
+
+.videosInformativos{
+    border:2px #4a4df0 solid;
+    color: #000000;
+    background-color: #79a4c5;
+    text-align: center;
+}
+
+.videosinformativos--informativos{
+    @extend .videosInformativos;
+    text-transform: uppercase;
+}
+
+
+@mixin sizes ($width, $height){
+    height: $height;
+    width: $width;
+}
+
+.my_mixin{
+    @include sizes (500px, 20px);
+    background-color: #181f25;
+    color: rgb(233, 233, 233);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    text-align: center;
+}
