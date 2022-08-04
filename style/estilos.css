@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Plus+Jakarta+Sans:wght@300&display=swap");
 .video {
-  margin-top: 120px;
+  margin-top: 100px;
 }
 .video h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -9,10 +9,10 @@
   font-style: normal;
   text-transform: uppercase;
   padding-left: 0px;
-  margin: 40px;
+  margin: 0px;
   margin-bottom: 20px;
 }
-.video .centrarVideo {
+.centrarVideo {
   padding-left: 40px;
 }
 
@@ -178,7 +178,7 @@ footer {
 
 .bordeImagenes {
   border: 10px ridge burlywood;
-  width: 350px;
+  width: 375px;
   height: 250px;
   margin-bottom: 3px;
   margin-top: 20px;
